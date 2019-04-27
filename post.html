@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var user={
+			"id":2,
+			"name":"ram"
+		}
+		var init={
+			method:'post',
+			data:JSON.stringfy(user),
+			headers:{
+				'conrent-Type':'aplication/json'
+			}
+
+
+			
+		}
+		var promise=fetch("https://my-json-server.typicode.com/kumaresankandasamy/Dem/users",init) ;
+		promise.then(then=>{
+			console.log(response);
+		})
+	</script>
+
+</body>
+</html>
